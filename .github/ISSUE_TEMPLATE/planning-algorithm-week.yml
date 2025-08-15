@@ -3,13 +3,15 @@ description: 'Algorithm week-based task planning'
 title: '[Week1] EunseoPark'
 labels: ['week', 'problems']
 body:
-  - type: markdown
+  - type: textarea
+    id: tasks
     attributes:
+      label: "✅ To-do"
+      description: "해당 기능을 구현하기 위한 세부 작업 목록을 작성해주세요."
       value: |
-        ## 예제
-        - [ ] 문제 1
-        - [ ] 문제 2
-
-        ## 과제
-        - [ ] 문제 1
-        - [ ] 문제 2
+        - [ ] todo 1
+        - [ ] todo 2
+        - [ ] todo 3
+        - [ ] todo 4
+    validations:
+      required: true
