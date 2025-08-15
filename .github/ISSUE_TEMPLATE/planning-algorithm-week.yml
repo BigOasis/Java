@@ -7,9 +7,22 @@ body:
     attributes:
       value: |
         ## 예제
-        - [ ] 문제 1
-        - [ ] 문제 2
+  - type: checkboxes
+    id: example-problems
+    attributes:
+      label: 예제 문제
+      options:
+        - label: 문제 1
+        - label: 문제 2
 
+  - type: markdown
+    attributes:
+      value: |
         ## 과제
-        - [ ] 문제 1
-        - [ ] 문제 2
+  - type: checkboxes
+    id: assignment-problems
+    attributes:
+      label: 과제 문제
+      options:
+        - label: 문제 1
+        - label: 문제 2
