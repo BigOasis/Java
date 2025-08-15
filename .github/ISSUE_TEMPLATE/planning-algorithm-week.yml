@@ -1,0 +1,15 @@
+name: 'Planning Algorithm Week'
+description: 'Algorithm week-based task planning'
+title: '[Week1] EunseoPark'
+labels: ['week', 'problems']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 예제
+        - [ ] 문제 1
+        - [ ] 문제 2
+
+        ## 과제
+        - [ ] 문제 1
+        - [ ] 문제 2
