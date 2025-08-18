@@ -103,8 +103,9 @@
 
 ## 스터디 멤버
 
-| 박은서 <br/> *(스터디장)*                                                          | 박교녕                                                                      | 이은채                                                                       | 멤버 4                                                             |
+| 박은서 <br/> *(스터디장)*                                                          | 박교녕                                                                      | 이은채                                                                       | 서보인                                                                      |
 | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| <img src="https://avatars.githubusercontent.com/u/88071251?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/80964083?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/171488704?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/00000000?v=4" width="96"> |
-| [@arty0928](https://github.com/arty0928)                                    | [@kny0ng125](https://github.com/kny0ng125)                                  | [@eunchrri](https://github.com/eunchrri)                                    | [@??](https://github.com)                                                   |
+| <img src="https://avatars.githubusercontent.com/u/88071251?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/80964083?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/171488704?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/63088266?v=4" width="96"> |
+| [@arty0928](https://github.com/arty0928)                                    | [@kny0ng125](https://github.com/kny0ng125)                                  | [@eunchrri](https://github.com/eunchrri)                                    | [@sbi1024](https://github.com/sbi1024)                                      |
+
 
