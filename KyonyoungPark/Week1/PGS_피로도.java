@@ -23,7 +23,7 @@ public class PGS {
 
     public static void main(String[] args){
         Solution s = new Solution();
-        System.out.println(s.solution(80, new int[][]{[80,20], [50, 40], [30, 10]}));
+        System.out.println(s.solution(80, new int[][]{{80,20}, {50, 40}, {30, 10}}));
     }
 }
 
