@@ -120,9 +120,10 @@ feat: BOJ_1018_체스판다시칠하기_체스판 로직 구현 #2
 
 ## 스터디 멤버
 
-| 박은서 <br/> *(스터디장)*                                                          | 박교녕                                                                      | 이은채                                                                       | 서보인                                                                      |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| <img src="https://avatars.githubusercontent.com/u/88071251?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/80964083?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/171488704?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/63088266?v=4" width="96"> |
-| [@arty0928](https://github.com/arty0928)                                    | [@kny0ng125](https://github.com/kny0ng125)                                  | [@eunchrri](https://github.com/eunchrri)                                    | [@sbi1024](https://github.com/sbi1024)                                      |
+
+| 박은서 <br/> *(스터디장)* | 박교녕  | 서보인 |
+|---------------------------|--------|--------|
+| <img src="https://avatars.githubusercontent.com/u/88071251?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/80964083?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/63088266?v=4" width="96"> |
+| [@arty0928](https://github.com/arty0928) | [@kny0ng125](https://github.com/kny0ng125)  | [@sbi1024](https://github.com/sbi1024) |                               |
 
 
