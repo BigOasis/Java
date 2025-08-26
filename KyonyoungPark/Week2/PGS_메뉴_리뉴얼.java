@@ -1,5 +1,7 @@
 import java.util.*;
 
+// 최대 Count만 answer에 넣는 것까지 구현
+// 알파벳 수집 및 Combination 생성 파트 수정 필요
 class Solution {
     public static boolean isSubsequence(String item, String order) {
         int itemIdx = 0;
