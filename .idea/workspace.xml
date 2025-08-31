@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c04c72c3-9d8a-4b5b-a7cc-20c4894bc547" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/KyonyoungPark/Week2/LTC_Valid_Parentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KyonyoungPark/Week2/LTC_Daily_Temperatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <workItem from="1756052895333" duration="4557000" />
       <workItem from="1756144510729" duration="8303000" />
       <workItem from="1756169838555" duration="6233000" />
-      <workItem from="1756632732561" duration="3993000" />
+      <workItem from="1756632732561" duration="7719000" />
     </task>
     <servers />
   </component>
