@@ -31,6 +31,7 @@ public class Main {
 
     // 빈칸이 최대 58개 언저리라서 30개중 3개 뽑는 combination에 대해서만 다 검사하면 된다.
     // 30856 * 큐에는 최대 64개들어가기 때문에 넉넉함
+
     static void build(int cnt) {
         if (cnt == 3) {
             int tmp = spread();
@@ -76,6 +77,7 @@ public class Main {
             for (int i = 0; i < 4; i++) {
                 int ny = y + dy[i];
                 int nx = x + dx[i];
+              
 
                 if (nx >= 0 && nx < N && ny >= 0 && ny < M && tmp[nx][ny] == 0) {
                     tmp[nx][ny] = 2;
