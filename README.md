@@ -113,7 +113,7 @@ feat: BOJ_1018_체스판다시칠하기_체스판 로직 구현 #2
 [1주차] EunseoPark - 8문제
 ```
 
-**[예시 PR](https://github.com/BigOasis/Java/pull/1)** 참고 해주세요 :)
+**[예시 PR](https://github.com/BigOasis/Java/pull/11)** 참고 해주세요 :)
 
 <br />
 <br />
