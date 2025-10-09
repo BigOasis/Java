@@ -113,7 +113,7 @@ feat: BOJ_1018_체스판다시칠하기_체스판 로직 구현 #2
 [1주차] EunseoPark - 8문제
 ```
 
-**[예시 PR](https://github.com/BigOasis/Java/pull/1)** 참고 해주세요 :)
+**[예시 PR](https://github.com/BigOasis/Java/pull/11)** 참고 해주세요 :)
 
 <br />
 <br />
@@ -121,9 +121,9 @@ feat: BOJ_1018_체스판다시칠하기_체스판 로직 구현 #2
 ## 스터디 멤버
 
 
-| 박은서 <br/> *(스터디장)* | 박교녕  | 서보인 |
-|---------------------------|--------|--------|
+| 박은서 <br/> *(스터디장)* | 박교녕  | 
+|---------------------------|--------|
 | <img src="https://avatars.githubusercontent.com/u/88071251?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/80964083?v=4" width="96"> | <img src="https://avatars.githubusercontent.com/u/63088266?v=4" width="96"> |
-| [@arty0928](https://github.com/arty0928) | [@kny0ng125](https://github.com/kny0ng125)  | [@sbi1024](https://github.com/sbi1024) |                               |
+| [@arty0928](https://github.com/arty0928) | [@kny0ng125](https://github.com/kny0ng125)  |                               
 
 
