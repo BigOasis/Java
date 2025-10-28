@@ -1,60 +1,77 @@
 import java.util.*;
 
 /*
-  1. L: 0, R: t의 길이 -1
-  2. while R < 끝 :
-     (L + 1 ~ R) 의 개수 == ( L ~ R ) 개수 : L++ 
-     else : R ++
-  3. 개수 세기 : substring다 돌면서 문자 개수 value == t의 문자 개수 : true
-
-  지금 개수로 안되어있음 개수세기 가 boolean으로 되어 있음, int 반환으로 바꿔서 L갱신 예정
+  [스스로 풀이] 533ms 46MB
+		투포인터로 O(M+N)
+		중복도 가능하다고 했으니까, 해시맵으로 개수도 비교
+		1. thm {알파벳 : 개수}
+		2. s의 L ~ R 범위 내의 thm 비교 
+    => 이 코드는 매번 thm 전체를 순회해야 함.
 */
-
 class Solution {
     public String minWindow(String s, String t) {
-        int tlen = t.length();
-        int slen = s.length();
+      int slen = s.length();
+      int tlen = t.length();
+      if(slen < tlen) return "";
+      int maxLen = slen;
+      String minStr = "";
 
-        if(slen < tlen) return "";
-        int L = 0, R = tlen - 1;
-        int ansL = 0, ansR = slen;
-        boolean find =false;
+      Map<Character, Integer> thm = new HashMap<>();
+      for(char c : t.toCharArray()){
+        thm.put(c, thm.getOrDefault(c, 0) + 1);
+      }
+      Map<Character, Integer> shm = new HashMap<>();
+      int L = 0, R = tlen - 1;
+      String sub = s.substring(L, R + 1);
+      for(char c : sub.toCharArray()){
+        shm.put(c, shm.getOrDefault(c, 0) + 1);
+      }
 
-        while(R < slen){
-
-          if(getCount(L,R,s,t)){
-            find = true;
-            if(ansR - ansL > R - L){
-              ansL = L; ansR = R;
-            }
-            L++;
-          }
-          else{
-            R++;
+      while(R < slen && L <= R){
+        boolean hasAll = true;
+        int count = 0;
+        
+        for(char key : thm.keySet()){
+          if(shm.containsKey(key)){
+            count++;
+            if(shm.get(key) < thm.get(key)) hasAll = false;
           }
         }
-        
-        if(find) return s.substring(ansL, ansR+1);
-        return "";
-    }
-    static boolean getCount(int L, int R,String s, String t){
-      Map<Character, Integer> hmt = new HashMap<>();
-      Map<Character, Integer> hms = new HashMap<>();
-
-      for(char c : t.toCharArray()){
-        hmt.put(c, 
-        hmt.getOrDefault(c, 0) + 1
-        );
+        if(count == 0){
+          R++;
+          if(R < slen){
+            shm.put(s.charAt(R),shm.getOrDefault(s.charAt(R),0) + 1);   
+          }
+          continue;
+        }
+        // 모두 있고,
+        if(count == thm.size()){
+          if(hasAll){
+            char c = s.charAt(L);
+            shm.put(c, shm.get(c)-1);
+            if(shm.get(c).intValue() == 0){
+              shm.remove(c);
+            }
+            if(maxLen >= (R - L + 1)){
+              maxLen = R - L + 1;
+              minStr = s.substring(L, R + 1);
+            }
+            L++;
+          }else{
+            R++;
+            if(R < slen){
+              shm.put(s.charAt(R),shm.getOrDefault(s.charAt(R),0) + 1);   
+            }
+          }
+        }
+        else{
+          R++;
+          if(R < slen){
+            shm.put(s.charAt(R),shm.getOrDefault(s.charAt(R),0) + 1);   
+          }
+        }
       }
 
-      String newStr = s.substring(L,R+1);
-      for(char c : newStr.toCharArray()){
-        hms.put(c, hms.getOrDefault(c, 0) + 1);
-      }
-
-      for(char c : hmt.keySet()){
-        if(!hms.containsKey(c) || hmt.get(c) != hms.get(c)) return false;;
-      }
-      return true;
+      return minStr;       
     }
 }
