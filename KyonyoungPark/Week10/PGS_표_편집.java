@@ -13,18 +13,18 @@ class Solution {
         int cnt = 0;
         if(s.equals("U")){
             while(curIdx > 0 && cnt<X){
+                curIdx--;
                 if(!isDeleted[curIdx]){
                     cnt++;
                 }
-                curIdx--;
             }
         }
         else{
             while(curIdx < N-1 && cnt<X){
+                curIdx++;
                 if(!isDeleted[curIdx]){
                     cnt++;
                 }
-                curIdx++;
             }
         }
     }
