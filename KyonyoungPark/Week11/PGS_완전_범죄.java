@@ -1,4 +1,4 @@
-//dfs + dp (분명 메모지에이션 없으면 시간 오링날듯)
+//dfs + dp (분명 메모지에이션 없으면 시간 오링남)
 import java.util.*;
 
 class Solution {
