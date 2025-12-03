@@ -49,3 +49,40 @@ class Solution {
         return answer;
     }
 }
+
+/*
+    그냥 LinkedList로 구현하면 100,000 * 30개가 되어서 시간복잡도 초과하지는 않겠다.
+    먼저 위의 방식대로 푼 후 다시 LinkedList로 구현
+    위의 방식이 O(M)으로 더 빠르긴 하지만, 실제 테스트 결과 둘 다 통과, 시간 차이 크지 않음
+*/
+class Solution {
+    public int solution(int cacheSize, String[] cities) {
+        if(cacheSize == 0) return 5 * cities.length;
+        int answer = 0;
+        
+        List<String> list = new LinkedList<>();
+        Set<String> cache = new HashSet<>();
+        
+        for(String city : cities){
+            String cityName = city.toUpperCase();
+            
+            // miss
+            if(!cache.contains(cityName)){
+                answer += 5;
+                
+                if(cache.size() == cacheSize){
+                    cache.remove(list.remove(0));
+                }
+                cache.add(cityName);
+                list.add(cityName);
+            }
+            // hit
+            else{
+                answer += 1;
+                list.remove(cityName);
+                list.add(cityName);
+            }
+        }
+        return answer;
+    }
+}
